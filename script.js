@@ -1,5 +1,5 @@
-const submitFunction = (Event) => {
-    Event.preventDefault()
+const submitFunction = (event) => {
+    event.preventDefault()
 }
 
 document.getElementById('formulario').addEventListener('submit , submitFunction')
@@ -11,7 +11,7 @@ function validarFormulario(){
     camposTexto.forEach(campo => {
         let errorCampo = document.getElementById('error' + campo.id.slice(1))
         if(campo.ariaValueMax.length == ''){
-            
+
         }
     })
 }
