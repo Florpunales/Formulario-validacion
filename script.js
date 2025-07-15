@@ -22,7 +22,6 @@ document.getElementById('formulario').addEventListener('submit', function (e) {
 
     if (validarFormulario()){
         alert("Formulario valido");
-
     }else {
         console.log("Formulario con errores!");
     }
@@ -35,7 +34,7 @@ function validarFormulario(){
     let validacionCorrecta = true;
 
     camposTexto.forEach(campo => {
-        let errorCampo = document.getElementById('error' + campo.id.charAt(0).toUppercase() + campo.id.slice(1))
+        let errorCampo = document.getElementById('error' + campo.id.charAt(0).toUpperCase() + campo.id.slice(1))
         if(campo.value.length == ''){
            mostrarError(errorCampo, 'Este campo es requerido!') 
            validacionCorrecta = false
