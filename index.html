@@ -39,7 +39,7 @@
             <br>
 
             <label for="actividad">Actividad</label>
-            <select name="actividad" id="actividad">
+            <select name="actividad" id="actividad" required>
                 <option value="">Seleccione...</option>
                 <option value="Tecnologia">Tecnologia</option>
                 <option value="Programacion">Programacion</option>
@@ -47,11 +47,11 @@
                 <option value="Automatizacion">Automatizacion</option>
                 <option value="Sistemas">Sistemas</option>
                 <option value="Educacion">Educacion</option>
-
             </select>
             <div class="error" id="errorActividad"></div>
             <br>
-            <label for="nivelEstudio">Nivel de Estudio</label>
+
+            <label for="nivelEstudio">Nivel de Estudio:</label>
             <select name="nivelEstudio" id="nivelEstudio" required>
                 <option value="">Seleccione...</option>
                 <option value="Secundaria">Secundaria</option>
@@ -70,7 +70,7 @@
             <br>
 
             <label class="inline">Publicidad</label>
-            <input type="checkbox" name="Publicidad" id="Publicidad" value="ofertas">
+            <input type="checkbox" name="Publicidad" id="ofertas" value="ofertas">
             <label class="inline" for="ofertas">Ofertas</label>
             <input type="checkbox" name="Publicidad" id="novedades" value="novedades">
             <label class="inline" for="novedades">Novedades</label>
