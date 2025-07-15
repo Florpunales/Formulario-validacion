@@ -1,6 +1,6 @@
 const submitFunction = (event) => {
-    validarFormulario()
     event.preventDefault()
+    validarFormulario()
 }
 
 document.getElementById('formulario').addEventListener('submit , submitFunction')
