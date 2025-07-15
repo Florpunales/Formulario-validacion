@@ -1,4 +1,5 @@
 const submitFunction = (event) => {
+    validarFormulario()
     event.preventDefault()
 }
 
